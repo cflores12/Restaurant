@@ -1,0 +1,1 @@
+console.log("Hello This is Breakfast at Bryant!"),document.querySelector("body"),document.querySelector("div#content");
