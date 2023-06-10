@@ -20,29 +20,44 @@ html {
   line-height: 1.6; */
 }
 
+header {
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+}
+
+h1.restaurant-name {
+  display: inline;
+  float: left;
+  margin-left: 20px;
+  margin-top: 18px;
+}
 nav {
-  background-color: white;
+  display: inline;
   overflow: hidden;
+  margin-left: 10px;
 }
 
 nav a {
   float: right;
-  display: block;
   color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  margin-top: 15px;
 }
 
 nav a:hover {
-  background-color: #ddd;
-  color: black;
+  /*background-color: #ddd;*/
+  color: #9e9d9d;
+  cursor: pointer;
 }
 
 nav a.active {
-  background-color: #ddd;
-  color: white;
+  /*background-color: #ddd;*/
+  color: #9e9d9d;
+  cursor: pointer;
 }
 
 nav .icon {

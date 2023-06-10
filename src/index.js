@@ -15,14 +15,14 @@ function createHeader() {
 function createNav() {
   const nav = document.createElement("nav");
 
-  let home = document.createElement("a");
-  home.textContent = "Home";
-  home.addEventListener("click", (event) => {
+  let contact = document.createElement("a");
+  contact.textContent = "Contact";
+  contact.addEventListener("click", (event) => {
     if (event.target.classList.contains("active")) return;
-    setActive(home);
-    loadHome();
+    setActive(contact);
+    loadContact();
   });
-  nav.appendChild(home);
+  nav.appendChild(contact);
 
   let menu = document.createElement("a");
   menu.textContent = "Menu";
@@ -33,14 +33,14 @@ function createNav() {
   });
   nav.appendChild(menu);
 
-  let contact = document.createElement("a");
-  contact.textContent = "Contact";
-  contact.addEventListener("click", (event) => {
+  let home = document.createElement("a");
+  home.textContent = "Home";
+  home.addEventListener("click", (event) => {
     if (event.target.classList.contains("active")) return;
-    setActive(contact);
-    loadContact();
+    setActive(home);
+    loadHome();
   });
-  nav.appendChild(contact);
+  nav.appendChild(home);
 
   return nav;
 }
