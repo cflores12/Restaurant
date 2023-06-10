@@ -1,4 +1,6 @@
 import loadHome from "./home";
+import loadContact from "./contact";
+import loadMenu from "./menu";
 
 function createHeader() {
   const header = document.createElement("header");
@@ -15,7 +17,6 @@ function createNav() {
 
   let home = document.createElement("a");
   home.textContent = "Home";
-  home.href = "#";
   home.addEventListener("click", (event) => {
     if (event.target.classList.contains("active")) return;
     setActive(home);
@@ -25,21 +26,19 @@ function createNav() {
 
   let menu = document.createElement("a");
   menu.textContent = "Menu";
-  menu.href = "#";
   menu.addEventListener("click", (event) => {
     if (event.target.classList.contains("active")) return;
     setActive(menu);
-    //load contact
+    loadMenu();
   });
   nav.appendChild(menu);
 
   let contact = document.createElement("a");
   contact.textContent = "Contact";
-  contact.href = "#";
   contact.addEventListener("click", (event) => {
     if (event.target.classList.contains("active")) return;
     setActive(contact);
-    //load contact
+    loadContact();
   });
   nav.appendChild(contact);
 
@@ -60,9 +59,8 @@ function setActive(a) {
 
 function load() {
   const body = document.querySelector("body");
-  const content = document.querySelector("div#content");
 
-  body.appendChild(createHeader());
+  body.insertBefore(createHeader(), body.firstChild);
 
   setActive(document.querySelector("a"));
   loadHome();

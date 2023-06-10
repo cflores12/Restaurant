@@ -16,8 +16,8 @@
 }
 
 html {
-  font-size: 62.5%;
-  line-height: 1.6;
+  /*font-size: 62.5%;
+  line-height: 1.6; */
 }
 
 nav {
@@ -26,9 +26,9 @@ nav {
 }
 
 nav a {
-  float: left;
+  float: right;
   display: block;
-  color: #f2f2f2;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -41,7 +41,7 @@ nav a:hover {
 }
 
 nav a.active {
-  background-color: #04aa6d;
+  background-color: #ddd;
   color: white;
 }
 
