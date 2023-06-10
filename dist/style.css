@@ -1,0 +1,50 @@
+:root {
+  --font-color: #eee;
+  --font-color-dark: #aaa;
+  --border-color: #222;
+  --background-light: rgba(0, 0, 0, 0.6);
+  --background-light-hover: rgba(99, 99, 99, 0.4);
+  --background-dark: rgba(0, 0, 0, 0.9);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6;
+}
+
+nav {
+  background-color: white;
+  overflow: hidden;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+nav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+nav .icon {
+  display: none;
+}
