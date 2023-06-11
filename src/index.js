@@ -35,6 +35,7 @@ function createNav() {
 
   let home = document.createElement("a");
   home.textContent = "Home";
+  home.classList.add("home");
   home.addEventListener("click", (event) => {
     if (event.target.classList.contains("active")) return;
     setActive(home);
@@ -62,7 +63,7 @@ function load() {
 
   body.insertBefore(createHeader(), body.firstChild);
 
-  setActive(document.querySelector("a"));
+  setActive(document.querySelector("a.home"));
   loadHome();
 }
 
